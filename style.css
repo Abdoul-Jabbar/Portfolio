@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1rem 5rem;
+}
+
+header {
+    display: flex;
+    border: 0.01rem solid lightgray;
+    height: 30vh;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    background-image: url("./img/1994610.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    max-width: 100%;
+    box-shadow: 0 0 1rem gray ;
+}
+
+header .profile {
+    background-image: url("./img/profile-4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    border: 0.2rem solid white;
+    z-index: 1;
+    box-shadow: 0 0 1rem gray ;
+}
+
+header .nav {
+    min-height: 2rem;
+    width: 100%;
+    background-color: white;
+    opacity: 85%;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+header .nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 1rem;
+}
+
+header .nav ul li{
+    margin: 0 1rem;
+    flex-wrap: wrap;
+}
+
+header .nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #18568C;
+    align-items: center;
+    border-bottom: 0.1rem solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+}
+
+header .nav ul li a.active {
+    border-bottom: 0.1rem solid #F27D16;
+}
+
+header .nav ul li a:hover {
+    border-bottom: 0.1rem solid #F27D16;
+}
+
+main {
+    border: 0.01rem solid lightgray;
+    height: 50vh;
+    display: flex;
+    margin: 0.5rem;
+}
+
+footer {
+    border: 0.01rem solid lightgray;
+    height: 15vh;
+    display: flex;
+    margin: 0.5rem;
+}
+
+@media only screen and (max-width:1024px){
+
+    html {
+        box-sizing: border-box;
+        font-size: 14px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 0.5rem 1rem;
+    }
+
+    header .nav {
+        min-height: 2rem;
+        width: 100%;
+        background-color: white;
+        opacity: 80%;
+        position: absolute;
+        left: 0rem;
+        bottom: 0rem;
+        border-radius: 0rem 0rem 1rem 1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .profile {
+        background-image: url("./img/profile-4.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-position: center;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        border: 0.2rem solid white;
+        z-index: 1;
+    }
+
+    header .nav ul {
+        list-style-type: none;
+        padding: 0 1rem;
+        flex-wrap: wrap;
+        border-collapse: separate;
+    }
+
+    header .nav ul li{
+        display: block;
+        margin: 0 0.5rem;
+    }
+    
+}
