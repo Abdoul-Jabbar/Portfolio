@@ -165,8 +165,9 @@ main section article.work_history {
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.01rem solid lightgray;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     text-align: left;
+    color: #656B8C;
 }
 
 main section article.work_history img {
@@ -174,31 +175,29 @@ main section article.work_history img {
     width: 3.5rem;
     border-radius: 0.2rem;
     box-shadow: 0 0 1rem gray ;
+    border-collapse: separate;
 }
 
 main section article.work_history .company {
     /* border: 0.1rem solid red; */
     width: 6%;
     height: fit-content;
-    margin-bottom: 0.3%;
     display: flex;
     align-items: center;
 }
 
 main section article.work_history .position {
     /* border: 0.1rem solid red; */
-    width: 70%;
+    width: 50%;
     height: fit-content;
-    margin-bottom: 0.3%;
     display: flex;
     align-items: center;
 }
 
 main section article.work_history .period {
     /* border: 0.1rem solid red; */
-    width: 8%;
+    width: 20%;
     height: fit-content;
-    margin-bottom: 0.3%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,9 +205,8 @@ main section article.work_history .period {
 
 main section article.work_history .location {
     /* border: 0.1rem solid red; */
-    width: 12%;
+    width: 20%;
     height: fit-content;
-    margin-bottom: 0.3%;
     display: flex;
     align-items: center;
 }
@@ -221,6 +219,69 @@ footer {
     margin: 0.5rem 0;
     box-shadow: 0 0 1rem lightgray ;
     padding: 0 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .address {
+    width: 30%;
+    display: flex;
+    height: 2.3rem;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+footer .copyright {
+    width: 30%;
+    display: flex;
+    height: 2.3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+footer .social-media {
+    width: 30%;
+    display: flex;
+    height: 2.1rem;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+footer .social-media a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 1.2rem;
+    margin-right: 0.7rem;;
+    text-align: center;
+    color: white;
+}
+
+footer .social-media .fa-facebook {
+    background: #3B5998;
+}
+
+footer .social-media .fa-linkedin {
+    background: #007bb5;
+}
+
+footer .social-media .fa-google {
+    background: #dd4b39;
+}
+
+footer .social-media .fa-yahoo {
+    background: #430297;
+}
+
+footer .social-media .fa-skype {
+    background: #00aff0;
 }
 
 @media only screen and (max-width:1250px){
@@ -313,4 +374,65 @@ footer {
         font-size: 1rem;
     }
 
+}
+
+@media only screen and (max-width:900px){
+    main section article.work_history {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 0.01rem solid lightgray;
+        margin-bottom: 2%;
+        text-align: left;
+    }
+
+    main section article.work_history img {
+        height: 1.5rem;
+        width: 2.5rem;
+        border-radius: 0.2rem;
+        box-shadow: 0 0 1rem gray ;
+        border-collapse: separate;
+    }
+
+    main section article.work_history h3 {
+        font-size: 1rem;
+    }
+
+    main section article.work_history .period {
+        /* border: 0.1rem solid red; */
+        display: none;
+    }
+
+    main section article.work_history .location {
+        /* border: 0.1rem solid red; */
+        display: none;
+    }
+
+    main section article.work_history .company {
+        /* border: 0.1rem solid red; */
+        width: 20%;
+        margin-right: 0.3%;
+        margin-bottom: 0.3%;
+        display: flex;
+        align-items: center;
+    }
+    
+    main section article.work_history .position {
+        /* border: 0.1rem solid red; */
+        width: 70%;
+    }
+
+    footer .address {
+        display: none;
+    }
+    
+    footer .copyright {
+        display: none;
+    }
+    
+    footer .social-media {
+        width: 100%;
+        justify-content: center;
+    }
 }

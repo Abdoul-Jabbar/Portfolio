@@ -10,6 +10,10 @@ sectionItem3 = document.getElementById('sectionItem3');
 sectionItem4 = document.getElementById('sectionItem4');
 sectionItem5 = document.getElementById('sectionItem5');
 
+gmail = document.getElementById('gmail');
+yahoo = document.getElementById('yahoo');
+skype = document.getElementById('skype');
+
 function activeMenu(event) {
     navbutton1.className = "navbutton";
     navbutton2.className = "navbutton";
@@ -37,7 +41,17 @@ function activeSection2() {
     sectionItem2.classList.add("active");
 }
 
+function showGmail(){
+    alert('Contact me at: ajsoumahoro@gmail');
+}
 
+function showYahoo(){
+    alert('Contact me also at: soumahorojabbar@yahoo.fr');
+}
+
+function showSkype(){
+    alert('My id on Skype: live:e64ce26f59cbfdad');
+}
 
 navbutton1.addEventListener('click', activeMenu);
 navbutton1.addEventListener('click', activeSection1);
@@ -46,3 +60,6 @@ navbutton2.addEventListener('click', activeSection2);
 navbutton3.addEventListener('click', activeMenu);
 navbutton4.addEventListener('click', activeMenu);
 navbutton5.addEventListener('click', activeMenu);
+gmail.addEventListener('click', showGmail);
+yahoo.addEventListener('click', showYahoo);
+skype.addEventListener('click', showSkype);
