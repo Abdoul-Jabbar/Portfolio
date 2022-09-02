@@ -211,6 +211,21 @@ main section article.work_history .location {
     align-items: center;
 }
 
+main section .web_dev_skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section .web_dev_skills .web_dev_skills_icon {
+    margin: 1rem;
+    cursor: pointer;
+    width: 5%;
+}
+
+main section .web_dev_skills .web_dev_skills_icon i {
+    font-size: 3rem;
+}
+
 footer {
     border: 0.01rem solid lightgray;
     border-radius: 0.5rem;
@@ -233,6 +248,7 @@ footer .address {
     font-size: 0.8rem;
     font-weight: 700;
     padding-left: 1rem;
+    color: #0D0E26;
 }
 
 footer .copyright {
@@ -243,6 +259,7 @@ footer .copyright {
     align-items: center;
     font-size: 0.8rem;
     font-weight: 700;
+    color: #0D0E26;
 }
 
 footer .social-media {
@@ -434,5 +451,9 @@ footer .social-media .fa-skype {
     footer .social-media {
         width: 100%;
         justify-content: center;
+    }
+
+    main section .web_dev_skills .web_dev_skills_icon i {
+        font-size: 2rem;
     }
 }

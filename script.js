@@ -23,22 +23,37 @@ function activeMenu(event) {
     event.target.classList.add("active");
 }
 
-function activeSection1() {
+function disableSection(){
     sectionItem1.className = "sectionItem";
     sectionItem2.className = "sectionItem";
     sectionItem3.className = "sectionItem";
     sectionItem4.className = "sectionItem";
     sectionItem5.className = "sectionItem";
+}
+
+function activeSection1() {
+    disableSection();
     sectionItem1.classList.add("active");
 }
 
 function activeSection2() {
-    sectionItem1.className = "sectionItem";
-    sectionItem2.className = "sectionItem";
-    sectionItem3.className = "sectionItem";
-    sectionItem4.className = "sectionItem";
-    sectionItem5.className = "sectionItem";
+    disableSection();
     sectionItem2.classList.add("active");
+}
+
+function activeSection3() {
+    disableSection();
+    sectionItem3.classList.add("active");
+}
+
+function activeSection4() {
+    disableSection();
+    sectionItem4.classList.add("active");
+}
+
+function activeSection5() {
+    disableSection();
+    sectionItem5.classList.add("active");
 }
 
 function showGmail(){
@@ -58,8 +73,11 @@ navbutton1.addEventListener('click', activeSection1);
 navbutton2.addEventListener('click', activeMenu);
 navbutton2.addEventListener('click', activeSection2);
 navbutton3.addEventListener('click', activeMenu);
+navbutton3.addEventListener('click', activeSection3);
 navbutton4.addEventListener('click', activeMenu);
+navbutton4.addEventListener('click', activeSection4);
 navbutton5.addEventListener('click', activeMenu);
+navbutton5.addEventListener('click', activeSection5);
 gmail.addEventListener('click', showGmail);
 yahoo.addEventListener('click', showYahoo);
 skype.addEventListener('click', showSkype);
