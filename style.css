@@ -2,15 +2,15 @@ html {
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 1rem 5rem;
+    padding: 0.5rem 4rem;
 }
 
 header {
     display: flex;
     border: 0.01rem solid lightgray;
-    height: 30vh;
-    margin: 0.5rem;
     border-radius: 1rem;
+    height: 30vh;
+    margin: 1rem 0;
     background-image: url("./img/1994610.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -38,11 +38,20 @@ header .profile {
     box-shadow: 0 0 1rem gray ;
 }
 
+header .name {
+    height: fit-content;
+    width: 100%;
+    text-align: right;
+    color: #56588C;
+    padding: 0 1.3rem;
+    font-size: 1rem;
+}
+
 header .nav {
     min-height: 2rem;
     width: 100%;
     background-color: white;
-    opacity: 85%;
+    opacity: 95%;
     position: absolute;
     left: 0rem;
     bottom: 0rem;
@@ -80,32 +89,155 @@ header .nav ul li a:hover {
 
 main {
     border: 0.01rem solid lightgray;
-    height: 50vh;
+    border-radius: 0.5rem;
+    height: 55vh;
     display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    box-shadow: 0 0 1rem lightgray ;
+    padding: 0 2.5rem;
+    text-align: justify;
+    line-height: 1.5;
+    overflow-y: auto;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: #18568C;
+}
+
+main section {
+    margin: 0 1rem;
+    display: none;
+}
+
+main section.active {
+    display: block;
+    animation: 1s fadeIn;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+        visibility: visible;
+        opacity: 0.5;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+main section .illustrator {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main section .illustrator .item {
+    width: 20%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2rem lightgray ;
+    padding: 0.2rem;
+    text-align: center;
     margin: 0.5rem;
+}
+
+main section .illustrator .item p {
+    color: #F27D16;
+}
+
+main section .illustrator .item span {
+    font-size: 3rem;
+    color: #56588C;
+}
+
+main section .illustrator .item h4 {
+    color: #56588C;
+}
+
+main section article.work_history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.01rem solid lightgray;
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+main section article.work_history img {
+    height: 2.5rem;
+    width: 3.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 1rem gray ;
+}
+
+main section article.work_history .company {
+    /* border: 0.1rem solid red; */
+    width: 6%;
+    height: fit-content;
+    margin-bottom: 0.3%;
+    display: flex;
+    align-items: center;
+}
+
+main section article.work_history .position {
+    /* border: 0.1rem solid red; */
+    width: 70%;
+    height: fit-content;
+    margin-bottom: 0.3%;
+    display: flex;
+    align-items: center;
+}
+
+main section article.work_history .period {
+    /* border: 0.1rem solid red; */
+    width: 8%;
+    height: fit-content;
+    margin-bottom: 0.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section article.work_history .location {
+    /* border: 0.1rem solid red; */
+    width: 12%;
+    height: fit-content;
+    margin-bottom: 0.3%;
+    display: flex;
+    align-items: center;
 }
 
 footer {
     border: 0.01rem solid lightgray;
-    height: 15vh;
+    border-radius: 0.5rem;
+    height: 7vh;
     display: flex;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 0 1rem lightgray ;
+    padding: 0 2.5rem;
 }
 
-@media only screen and (max-width:1024px){
+@media only screen and (max-width:1250px){
 
     html {
         box-sizing: border-box;
-        font-size: 14px;
+        font-size: 15px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         padding: 0.5rem 1rem;
     }
+    
 
     header .nav {
         min-height: 2rem;
         width: 100%;
         background-color: white;
-        opacity: 80%;
+        opacity: 95%;
         position: absolute;
         left: 0rem;
         bottom: 0rem;
@@ -120,14 +252,24 @@ footer {
         background-position: center;
         background-size: cover;
         background-position: center;
-        height: 7rem;
-        width: 7rem;
+        height: 6rem;
+        width: 6rem;
         border-radius: 50%;
         position: absolute;
-        top: 2rem;
-        left: 2rem;
+        top: 3.5rem;
+        left: 1.5rem;
         border: 0.2rem solid white;
         z-index: 1;
+        box-shadow: 0 0 1rem gray ;
+    }
+
+    header .name {
+        height: fit-content;
+        width: 100%;
+        text-align: right;
+        color: #56588C;
+        padding: 0 1.3rem;
+        font-size: 1rem;
     }
 
     header .nav ul {
@@ -137,9 +279,38 @@ footer {
         border-collapse: separate;
     }
 
-    header .nav ul li{
-        display: block;
-        margin: 0 0.5rem;
+    main h1 {
+        font-size: 1.5rem;
+        color: #18568C;
+    }
+
+    main section .illustrator {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     
+    main section .illustrator .item {
+        min-width: 10rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 2rem lightgray ;
+        padding: 0.2rem;
+        text-align: center;
+        margin: 0.5rem;
+    }
+    
+    main section .illustrator .item p {
+        color: #F27D16;
+    }
+    
+    main section .illustrator .item span {
+        font-size: 2rem;
+        color: #56588C;
+    }
+    
+    main section .illustrator .item h4 {
+        color: #56588C;
+        font-size: 1rem;
+    }
+
 }
