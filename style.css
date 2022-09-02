@@ -174,12 +174,10 @@ main section article.work_history img {
     height: 2.5rem;
     width: 3.5rem;
     border-radius: 0.2rem;
-    box-shadow: 0 0 1rem gray ;
     border-collapse: separate;
 }
 
 main section article.work_history .company {
-    /* border: 0.1rem solid red; */
     width: 6%;
     height: fit-content;
     display: flex;
@@ -187,7 +185,6 @@ main section article.work_history .company {
 }
 
 main section article.work_history .position {
-    /* border: 0.1rem solid red; */
     width: 50%;
     height: fit-content;
     display: flex;
@@ -195,7 +192,6 @@ main section article.work_history .position {
 }
 
 main section article.work_history .period {
-    /* border: 0.1rem solid red; */
     width: 20%;
     height: fit-content;
     display: flex;
@@ -204,25 +200,57 @@ main section article.work_history .period {
 }
 
 main section article.work_history .location {
-    /* border: 0.1rem solid red; */
     width: 20%;
     height: fit-content;
     display: flex;
     align-items: center;
 }
 
-main section .web_dev_skills {
+main section article.Edu_history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.01rem solid lightgray;
+    margin-bottom: 1%;
+    text-align: left;
+    color: #656B8C;
+}
+
+main section article.Edu_history .period {
+    width: 15%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+main section article.Edu_history .degree {
+    width: 58%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+main section article.Edu_history .university {
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+main section .fontawesome {
     display: flex;
     flex-wrap: wrap;
 }
 
-main section .web_dev_skills .web_dev_skills_icon {
+main section .fontawesome .fontawesome_icon {
     margin: 1rem;
     cursor: pointer;
     width: 5%;
 }
 
-main section .web_dev_skills .web_dev_skills_icon i {
+main section .fontawesome .fontawesome_icon i {
     font-size: 3rem;
 }
 
@@ -408,7 +436,6 @@ footer .social-media .fa-skype {
         height: 1.5rem;
         width: 2.5rem;
         border-radius: 0.2rem;
-        box-shadow: 0 0 1rem gray ;
         border-collapse: separate;
     }
 
@@ -417,17 +444,17 @@ footer .social-media .fa-skype {
     }
 
     main section article.work_history .period {
-        /* border: 0.1rem solid red; */
+
         display: none;
     }
 
     main section article.work_history .location {
-        /* border: 0.1rem solid red; */
+
         display: none;
     }
 
     main section article.work_history .company {
-        /* border: 0.1rem solid red; */
+
         width: 20%;
         margin-right: 0.3%;
         margin-bottom: 0.3%;
@@ -436,7 +463,7 @@ footer .social-media .fa-skype {
     }
     
     main section article.work_history .position {
-        /* border: 0.1rem solid red; */
+
         width: 70%;
     }
 
@@ -453,7 +480,19 @@ footer .social-media .fa-skype {
         justify-content: center;
     }
 
-    main section .web_dev_skills .web_dev_skills_icon i {
+    main section .fontawesome .fontawesome_icon i {
         font-size: 2rem;
+    }
+
+    main section article.Edu_history .period {
+        display: none;
+    }
+    
+    main section article.Edu_history .degree {
+        width: 55%;
+    }
+    
+    main section article.Edu_history .university {
+        width: 45%;
     }
 }
